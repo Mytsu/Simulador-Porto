@@ -72,8 +72,11 @@ Node * lista_inserir(Lista * lst, unsigned int index, TIPO * item);
 
 Node * lista_remover(Lista * lst, Node * node);
 
+int lista_tamanho(Lista * lst);
+
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* LISTA_H */
+

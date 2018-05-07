@@ -228,3 +228,7 @@ Node * lista_remover(Lista * lst, Node * node) {
     }
     return NULL;
 }
+
+int lista_tamanho(Lista * lst) {
+	return lst->tam;
+}
