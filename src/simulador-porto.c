@@ -54,7 +54,7 @@ void criar_containers(Navio * nav, int n);
 
 int main(int args, char** argv) {
     // iniciando semente do gerador de numeros
-    srandom(time(NULL));
+    srand(time(NULL));
 
     alocar_filas();
     alocar_travessas();
@@ -63,7 +63,7 @@ int main(int args, char** argv) {
     unsigned long int tempo = 0;
     do {
         // coloca um numero aleatorio (0-3) de navios na fila
-        entrar_fila(random() % 3);
+        entrar_fila(rand() % 3);
 
         tempo++;
     } while(tempo < MAX_TEMPO);
@@ -77,9 +77,9 @@ int main(int args, char** argv) {
 */
 
 Container * alocar_container() {
-    Container * c
+    Container * c;
     if(!(c =(Container*)malloc(sizeof(Container)))) {
-        c->id = random();
+        c->id = rand();
         return c;
     }
     return NULL;
@@ -118,9 +118,9 @@ void alocar_pilhas(Navio * nav) {
     for (int i = 0; i < 4; i++)
         nav->pilhas[i] = lista_nova();
     // gerando containers
-    int mod = (random() % 12) + 4;
+    int mod = (rand() % 12) + 4;
     for (int i = 0; i < mod; i++)
-        lista_ipush(nav->pilha[i%4], );
+        lista_ipush(nav->pilhas[i%4], alocar_container());
 }
 
 void liberar_pilhas(Navio * nav) {
@@ -145,7 +145,7 @@ void liberar_travessas() {
 */
 
 /*
-    ENTRADA E SAÍDA DAS FILAS
+    [INICIO] ENTRADA E SAÍDA DAS FILAS
 */
 
 void entrar_fila(int n) {
@@ -156,3 +156,7 @@ void entrar_fila(int n) {
     for(int i = 0; i < n; i++) 
         lista_fpush(fila_atracadouro[mod++], alocar_container());
 }
+
+/*
+    [FIM] ENTRADA E SAÍDA DAS FILAS
+*/
