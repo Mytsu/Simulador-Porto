@@ -53,6 +53,8 @@ Lista * lista_nova();
 
 void lista_destruir(Lista * lst);
 
+Node * lista_inicio(Lista * lst);
+
 Node * lista_ipush(Lista * lst, TIPO * item);
 
 Node * lista_ipop(Lista * lst);

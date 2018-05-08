@@ -18,6 +18,7 @@
 
 typedef struct {
     unsigned long int id;
+    unsigned long int tempo;
     Lista * pilhas[4];
 } Navio;
 
@@ -48,6 +49,7 @@ void liberar_travessas();
 
 // entrada/saida das filas
 void entrar_fila(int n);
+void incrementar_tempo();
     
 // entrada/saida das pilhas
 void criar_containers(Navio * nav, int n);
@@ -55,19 +57,19 @@ void criar_containers(Navio * nav, int n);
 int main(int args, char** argv) {
     // iniciando semente do gerador de numeros
     srand(time(NULL));
-
+    // alocando memória
     alocar_filas();
     alocar_travessas();
-
     last_id = 0; 
     unsigned long int tempo = 0;
     do {
         // coloca um numero aleatorio (0-3) de navios na fila
         entrar_fila(rand() % 3);
 
+        incrementar_tempo();
         tempo++;
     } while(tempo < MAX_TEMPO);
-
+    // desalocando memória
     liberar_filas();
     liberar_travessas();
 }
@@ -93,6 +95,7 @@ Navio * alocar_navio() {
     Navio * navio;
     if(!(navio =(Navio*)malloc(sizeof(Navio)))) {
         navio->id = ++last_id;
+        navio->tempo = 0;
         alocar_pilhas(navio);
         return navio;
     }
@@ -154,7 +157,20 @@ void entrar_fila(int n) {
         mod += lista_tamanho(fila_atracadouro[i]); 
     mod = mod % 4;
     for(int i = 0; i < n; i++) 
-        lista_fpush(fila_atracadouro[mod++], alocar_container());
+        lista_fpush(fila_atracadouro[mod++], alocar_navio());
+}
+
+void incrementar_tempo() {
+    Node * n;
+    for (int i = 0; i < 4; i++) {
+        if(!(n = lista_inicio(fila_atracadouro[i]))) {
+            while(n != NULL) {
+                Navio * nav;
+                (nav = n->valor)->tempo++;
+                n = lista_iterador(n, LISTA_INICIO);
+            } //endwhile           
+        }     //endif   
+    }         //endfor
 }
 
 /*

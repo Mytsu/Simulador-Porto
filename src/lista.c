@@ -72,6 +72,10 @@ void lista_destruir(Lista * lst) {
     return;
 }
 
+Node * lista_inicio(Lista * lst) {
+    return lst->inicio;
+}
+
 // Insere um item no início da lista
 // retorna null se falhar na alocação do node
 Node * lista_ipush(Lista * lst, TIPO * item) {
