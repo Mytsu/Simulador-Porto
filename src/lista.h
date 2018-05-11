@@ -41,7 +41,7 @@ typedef enum {
 
 Node * lista_novo_node(TIPO * valor);
 
-void lista_destruir_node(Node * node);
+TIPO * lista_destruir_node(Node * node);
 
 // Prototipos do iterador
 

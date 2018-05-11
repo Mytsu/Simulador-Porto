@@ -47,9 +47,14 @@ void liberar_pilhas(Navio * nav);
 void alocar_travessas();
 void liberar_travessas();
 
-// entrada/saida das filas
+// controle dos navios
+unsigned int qtd_containers(Navio * nav);
+
+// controle das filas
 void entrar_fila(int n);
 void incrementar_tempo();
+void movendo_gruas();
+int inserir_travessa();
     
 // entrada/saida das pilhas
 void criar_containers(Navio * nav, int n);
@@ -65,7 +70,7 @@ int main(int args, char** argv) {
     do {
         // coloca um numero aleatorio (0-3) de navios na fila
         entrar_fila(rand() % 3);
-
+        movendo_gruas();
         incrementar_tempo();
         tempo++;
     } while(tempo < MAX_TEMPO);
@@ -79,12 +84,11 @@ int main(int args, char** argv) {
 */
 
 Container * alocar_container() {
-    Container * c;
+    Container * c = NULL;
     if(!(c =(Container*)malloc(sizeof(Container)))) {
         c->id = rand();
-        return c;
     }
-    return NULL;
+    return c;
 }
 
 void liberar_container(Container * c) {
@@ -92,14 +96,13 @@ void liberar_container(Container * c) {
 }
 
 Navio * alocar_navio() {
-    Navio * navio;
+    Navio * navio = NULL;
     if(!(navio =(Navio*)malloc(sizeof(Navio)))) {
         navio->id = ++last_id;
         navio->tempo = 0;
         alocar_pilhas(navio);
-        return navio;
     }
-    return NULL;
+    return navio;
 }
 
 void liberar_navio(Navio * nav) {
@@ -148,7 +151,22 @@ void liberar_travessas() {
 */
 
 /*
-    [INICIO] ENTRADA E SAÍDA DAS FILAS
+    [INICIO] CONTROLE DOS NAVIOS
+*/
+
+unsigned int qtd_containers(Navio * nav) {
+    unsigned int tam = 0;
+    for (int i = 0; i < 4; i++)
+        tam += lista_tamanho(nav->pilhas[i]);
+    return tam;
+}
+
+/*
+    [FIM] CONTROLE DOS NAVIOS
+*/
+
+/*
+    [INICIO] CONTROLE DAS FILAS
 */
 
 void entrar_fila(int n) {
@@ -156,7 +174,7 @@ void entrar_fila(int n) {
     for(int i = 0; i < 4; i++) 
         mod += lista_tamanho(fila_atracadouro[i]); 
     mod = mod % 4;
-    for(int i = 0; i < n; i++) 
+    for(int i = 0; i < n; i++)
         lista_fpush(fila_atracadouro[mod++], alocar_navio());
 }
 
@@ -173,6 +191,22 @@ void incrementar_tempo() {
     }         //endfor
 }
 
+void movendo_gruas() {
+    for (int i = 0; i < 4; i++) {
+        Navio * nav = NULL;
+        if(!(nav = lista_destruir_node(
+            lista_ipop(fila_atracadouro[i])))) {
+            // movendo containers para travessas
+            while(qtd_containers(nav)) {
+                int mod = 0;
+                if(lista_tamanho(pilha_travessa[mod++]) < 5) {
+
+                }   //endif
+            }       //endwhile        
+        }           //endif
+    }               //endfor
+}
+
 /*
-    [FIM] ENTRADA E SAÍDA DAS FILAS
+    [FIM] CONTROLE DAS FILAS
 */

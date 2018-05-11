@@ -21,10 +21,10 @@ Node * lista_novo_node(TIPO * valor) {
     return node;
 }
 
-void lista_destruir_node(Node * node) {
-    free(node->valor);
+TIPO * lista_destruir_node(Node * node) {
+    TIPO * valor = node->valor;
     free(node);
-    return;
+    return valor;
 }
 
 // Implementação do Iterador
