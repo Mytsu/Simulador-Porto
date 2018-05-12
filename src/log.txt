@@ -1,0 +1,998 @@
+5. Alocando filas
+9. Alocando travessas
+incrementar tempo
+14. Incrementando tempo
+Entrando 0 navio(s)
+Fila 1:
+
+Fila 2:
+
+Fila 3:
+
+Fila 4:
+
+mover gruas
+15. Movendo gruas
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 0.00 = -nan(ind)
+incrementar tempo
+14. Incrementando tempo
+Entrando 0 navio(s)
+Fila 1:
+
+Fila 2:
+
+Fila 3:
+
+Fila 4:
+
+mover gruas
+15. Movendo gruas
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 0.00 = -nan(ind)
+incrementar tempo
+14. Incrementando tempo
+Entrando 2 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 0
+1. Alocando container
+Container id: 1
+1. Alocando container
+Container id: 2
+1. Alocando container
+Container id: 3
+1. Alocando container
+Container id: 4
+1. Alocando container
+Container id: 5
+1. Alocando container
+Container id: 6
+1. Alocando container
+Container id: 7
+1. Alocando container
+Container id: 8
+1. Alocando container
+Container id: 9
+1. Alocando container
+Container id: 10
+1. Alocando container
+Container id: 11
+1. Alocando container
+Container id: 12
+1. Alocando container
+Container id: 13
+1. Alocando container
+Container id: 14
+1. Alocando container
+Container id: 15
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 16
+12. Inserindo container
+1. Alocando container
+Container id: 17
+12. Inserindo container
+1. Alocando container
+Container id: 18
+12. Inserindo container
+1. Alocando container
+Container id: 19
+12. Inserindo container
+1. Alocando container
+Container id: 20
+12. Inserindo container
+1. Alocando container
+Container id: 21
+12. Inserindo container
+1. Alocando container
+Container id: 22
+12. Inserindo container
+1. Alocando container
+Container id: 23
+12. Inserindo container
+1. Alocando container
+Container id: 24
+12. Inserindo container
+11. Qtd containers
+navio id 1 criado, 16 containers.
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 25
+1. Alocando container
+Container id: 26
+1. Alocando container
+Container id: 27
+1. Alocando container
+Container id: 28
+1. Alocando container
+Container id: 29
+1. Alocando container
+Container id: 30
+1. Alocando container
+Container id: 31
+1. Alocando container
+Container id: 32
+1. Alocando container
+Container id: 33
+1. Alocando container
+Container id: 34
+1. Alocando container
+Container id: 35
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 36
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 37
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 38
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 39
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 40
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 41
+12. Inserindo container
+1. Alocando container
+Container id: 42
+12. Inserindo container
+1. Alocando container
+Container id: 43
+12. Inserindo container
+1. Alocando container
+Container id: 44
+12. Inserindo container
+1. Alocando container
+Container id: 45
+12. Inserindo container
+1. Alocando container
+Container id: 46
+12. Inserindo container
+1. Alocando container
+Container id: 47
+12. Inserindo container
+11. Qtd containers
+navio id 2 criado, 16 containers.
+Fila 1:
+1 
+Fila 2:
+2 
+Fila 3:
+
+Fila 4:
+
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 12
+movendo_gruas container: 12
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 35
+movendo_gruas container: 35
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 2.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 1 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 48
+1. Alocando container
+Container id: 49
+1. Alocando container
+Container id: 50
+1. Alocando container
+Container id: 51
+1. Alocando container
+Container id: 52
+1. Alocando container
+Container id: 53
+1. Alocando container
+Container id: 54
+1. Alocando container
+Container id: 55
+1. Alocando container
+Container id: 56
+1. Alocando container
+Container id: 57
+1. Alocando container
+Container id: 58
+1. Alocando container
+Container id: 59
+1. Alocando container
+Container id: 60
+1. Alocando container
+Container id: 61
+1. Alocando container
+Container id: 62
+1. Alocando container
+Container id: 63
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 64
+12. Inserindo container
+1. Alocando container
+Container id: 65
+12. Inserindo container
+1. Alocando container
+Container id: 66
+12. Inserindo container
+1. Alocando container
+Container id: 67
+12. Inserindo container
+1. Alocando container
+Container id: 68
+12. Inserindo container
+1. Alocando container
+Container id: 69
+12. Inserindo container
+1. Alocando container
+Container id: 70
+12. Inserindo container
+11. Qtd containers
+navio id 3 criado, 16 containers.
+Fila 1:
+1 
+Fila 2:
+2 
+Fila 3:
+3 
+Fila 4:
+
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 8
+movendo_gruas container: 8
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 33
+movendo_gruas container: 33
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 60
+movendo_gruas container: 60
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 3.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 1 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 71
+1. Alocando container
+Container id: 72
+1. Alocando container
+Container id: 73
+1. Alocando container
+Container id: 74
+1. Alocando container
+Container id: 75
+1. Alocando container
+Container id: 76
+1. Alocando container
+Container id: 77
+1. Alocando container
+Container id: 78
+1. Alocando container
+Container id: 79
+1. Alocando container
+Container id: 80
+1. Alocando container
+Container id: 81
+1. Alocando container
+Container id: 82
+1. Alocando container
+Container id: 83
+1. Alocando container
+Container id: 84
+1. Alocando container
+Container id: 85
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 86
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 87
+12. Inserindo container
+1. Alocando container
+Container id: 88
+12. Inserindo container
+1. Alocando container
+Container id: 89
+12. Inserindo container
+1. Alocando container
+Container id: 90
+12. Inserindo container
+1. Alocando container
+Container id: 91
+12. Inserindo container
+1. Alocando container
+Container id: 92
+12. Inserindo container
+1. Alocando container
+Container id: 93
+12. Inserindo container
+1. Alocando container
+Container id: 94
+12. Inserindo container
+11. Qtd containers
+navio id 4 criado, 16 containers.
+Fila 1:
+1 
+Fila 2:
+2 
+Fila 3:
+3 
+Fila 4:
+4 
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 4
+movendo_gruas container: 4
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 29
+movendo_gruas container: 29
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 56
+movendo_gruas container: 56
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+movendo_gruas navio : 4
+13. Removendo container
+Container removido: 83
+movendo_gruas container: 83
+16. Inserindo na travessa
+Grua 3 movendo container do navio 4
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 4.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 2 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 95
+1. Alocando container
+Container id: 96
+1. Alocando container
+Container id: 97
+1. Alocando container
+Container id: 98
+1. Alocando container
+Container id: 99
+1. Alocando container
+Container id: 100
+1. Alocando container
+Container id: 101
+1. Alocando container
+Container id: 102
+1. Alocando container
+Container id: 103
+1. Alocando container
+Container id: 104
+1. Alocando container
+Container id: 105
+1. Alocando container
+Container id: 106
+1. Alocando container
+Container id: 107
+1. Alocando container
+Container id: 108
+1. Alocando container
+Container id: 109
+1. Alocando container
+Container id: 110
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 111
+12. Inserindo container
+1. Alocando container
+Container id: 112
+12. Inserindo container
+1. Alocando container
+Container id: 113
+12. Inserindo container
+11. Qtd containers
+navio id 5 criado, 16 containers.
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 114
+1. Alocando container
+Container id: 115
+1. Alocando container
+Container id: 116
+1. Alocando container
+Container id: 117
+1. Alocando container
+Container id: 118
+1. Alocando container
+Container id: 119
+1. Alocando container
+Container id: 120
+1. Alocando container
+Container id: 121
+1. Alocando container
+Container id: 122
+1. Alocando container
+Container id: 123
+1. Alocando container
+Container id: 124
+1. Alocando container
+Container id: 125
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 126
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 127
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 128
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 129
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 130
+12. Inserindo container
+11. Qtd containers
+navio id 6 criado, 16 containers.
+Fila 1:
+1 5 
+Fila 2:
+2 6 
+Fila 3:
+3 
+Fila 4:
+4 
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 0
+movendo_gruas container: 0
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 25
+movendo_gruas container: 25
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 52
+movendo_gruas container: 52
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+movendo_gruas navio : 4
+13. Removendo container
+Container removido: 79
+movendo_gruas container: 79
+16. Inserindo na travessa
+Grua 3 movendo container do navio 4
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 6.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 1 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 131
+1. Alocando container
+Container id: 132
+1. Alocando container
+Container id: 133
+1. Alocando container
+Container id: 134
+1. Alocando container
+Container id: 135
+1. Alocando container
+Container id: 136
+1. Alocando container
+Container id: 137
+1. Alocando container
+Container id: 138
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 139
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 140
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 141
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 142
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 143
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 144
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 145
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 146
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 147
+12. Inserindo container
+1. Alocando container
+Container id: 148
+12. Inserindo container
+1. Alocando container
+Container id: 149
+12. Inserindo container
+1. Alocando container
+Container id: 150
+12. Inserindo container
+1. Alocando container
+Container id: 151
+12. Inserindo container
+1. Alocando container
+Container id: 152
+12. Inserindo container
+11. Qtd containers
+navio id 7 criado, 16 containers.
+Fila 1:
+1 5 
+Fila 2:
+2 6 
+Fila 3:
+3 7 
+Fila 4:
+4 
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 13
+movendo_gruas container: 13
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 36
+movendo_gruas container: 36
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 48
+movendo_gruas container: 48
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+movendo_gruas navio : 4
+13. Removendo container
+Container removido: 75
+movendo_gruas container: 75
+16. Inserindo na travessa
+Grua 3 movendo container do navio 4
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 7.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 0 navio(s)
+Fila 1:
+1 5 
+Fila 2:
+2 6 
+Fila 3:
+3 7 
+Fila 4:
+4 
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 9
+movendo_gruas container: 9
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 34
+movendo_gruas container: 34
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 61
+movendo_gruas container: 61
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+movendo_gruas navio : 4
+13. Removendo container
+Container removido: 71
+movendo_gruas container: 71
+16. Inserindo na travessa
+Grua 3 movendo container do navio 4
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+Liberando travessa 0: tamanho: 5
+71 48 25 4 12 
+2. Liberando container: 71
+2. Liberando container: 75
+2. Liberando container: 9
+2. Liberando container: 34
+2. Liberando container: 61
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 7.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 2 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 153
+1. Alocando container
+Container id: 154
+1. Alocando container
+Container id: 155
+1. Alocando container
+Container id: 156
+1. Alocando container
+Container id: 157
+1. Alocando container
+Container id: 158
+1. Alocando container
+Container id: 159
+1. Alocando container
+Container id: 160
+1. Alocando container
+Container id: 161
+1. Alocando container
+Container id: 162
+1. Alocando container
+Container id: 163
+1. Alocando container
+Container id: 164
+1. Alocando container
+Container id: 165
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 166
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 167
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 168
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 169
+12. Inserindo container
+1. Alocando container
+Container id: 170
+12. Inserindo container
+1. Alocando container
+Container id: 171
+12. Inserindo container
+1. Alocando container
+Container id: 172
+12. Inserindo container
+11. Qtd containers
+navio id 8 criado, 16 containers.
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 173
+1. Alocando container
+Container id: 174
+1. Alocando container
+Container id: 175
+1. Alocando container
+Container id: 176
+1. Alocando container
+Container id: 177
+1. Alocando container
+Container id: 178
+1. Alocando container
+Container id: 179
+1. Alocando container
+Container id: 180
+1. Alocando container
+Container id: 181
+1. Alocando container
+Container id: 182
+1. Alocando container
+Container id: 183
+1. Alocando container
+Container id: 184
+1. Alocando container
+Container id: 185
+1. Alocando container
+Container id: 186
+1. Alocando container
+Container id: 187
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 188
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 189
+12. Inserindo container
+1. Alocando container
+Container id: 190
+12. Inserindo container
+1. Alocando container
+Container id: 191
+12. Inserindo container
+1. Alocando container
+Container id: 192
+12. Inserindo container
+1. Alocando container
+Container id: 193
+12. Inserindo container
+1. Alocando container
+Container id: 194
+12. Inserindo container
+1. Alocando container
+Container id: 195
+12. Inserindo container
+1. Alocando container
+Container id: 196
+12. Inserindo container
+1. Alocando container
+Container id: 197
+12. Inserindo container
+1. Alocando container
+Container id: 198
+12. Inserindo container
+1. Alocando container
+Container id: 199
+12. Inserindo container
+1. Alocando container
+Container id: 200
+12. Inserindo container
+1. Alocando container
+Container id: 201
+12. Inserindo container
+11. Qtd containers
+navio id 9 criado, 16 containers.
+Fila 1:
+1 5 9 
+Fila 2:
+2 6 
+Fila 3:
+3 7 
+Fila 4:
+4 8 
+mover gruas
+15. Movendo gruas
+movendo_gruas navio : 1
+13. Removendo container
+Container removido: 5
+movendo_gruas container: 5
+16. Inserindo na travessa
+Grua 0 movendo container do navio 1
+11. Qtd containers
+movendo_gruas navio : 2
+13. Removendo container
+Container removido: 30
+movendo_gruas container: 30
+16. Inserindo na travessa
+Grua 1 movendo container do navio 2
+11. Qtd containers
+movendo_gruas navio : 3
+13. Removendo container
+Container removido: 57
+movendo_gruas container: 57
+16. Inserindo na travessa
+Grua 2 movendo container do navio 3
+11. Qtd containers
+movendo_gruas navio : 4
+13. Removendo container
+Container removido: 84
+movendo_gruas container: 84
+16. Inserindo na travessa
+Grua 3 movendo container do navio 4
+11. Qtd containers
+esvaziar travessas
+16. Esvaziando travessas
+media tempo
+17. Media de tempo
+Tempo medio de espera: 0.00 / 9.00 = 0.00
+incrementar tempo
+14. Incrementando tempo
+Entrando 2 navio(s)
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 202
+1. Alocando container
+Container id: 203
+1. Alocando container
+Container id: 204
+1. Alocando container
+Container id: 205
+1. Alocando container
+Container id: 206
+1. Alocando container
+Container id: 207
+1. Alocando container
+Container id: 208
+1. Alocando container
+Container id: 209
+1. Alocando container
+Container id: 210
+1. Alocando container
+Container id: 211
+1. Alocando container
+Container id: 212
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 213
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 214
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 215
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 216
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 217
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 218
+12. Inserindo container
+1. Alocando container
+Container id: 219
+12. Inserindo container
+1. Alocando container
+Container id: 220
+12. Inserindo container
+1. Alocando container
+Container id: 221
+12. Inserindo container
+1. Alocando container
+Container id: 222
+12. Inserindo container
+1. Alocando container
+Container id: 223
+12. Inserindo container
+11. Qtd containers
+navio id 10 criado, 16 containers.
+3. Alocando navio
+7. Alocando pilhas
+1. Alocando container
+Container id: 224
+1. Alocando container
+Container id: 225
+1. Alocando container
+Container id: 226
+1. Alocando container
+Container id: 227
+1. Alocando container
+Container id: 228
+1. Alocando container
+Container id: 229
+1. Alocando container
+Container id: 230
+1. Alocando container
+Container id: 231
+12. Inserindo container
+Container inserido: 
+1. Alocando container
+Container id: 232
+12. Inserindo contain

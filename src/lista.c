@@ -26,6 +26,8 @@ TIPO * lista_valor(Node * n) {
 }
 
 TIPO * lista_destruir_node(Node * node) {
+    if(node == NULL)
+        return NULL;
     TIPO * valor = node->valor;
     free(node);
     return valor;
