@@ -100,6 +100,7 @@ int main(int args, char** argv) {
 */
 
 Container * alocar_container() {
+    printf("1. Alocando container\n");
     Container * c = NULL;
     if(!(c =(Container*)malloc(sizeof(Container))))
         return NULL;
@@ -109,10 +110,12 @@ Container * alocar_container() {
 }
 
 void liberar_container(Container * c) {
+    printf("2. Liberando container\n");
     free(c);
 }
 
 Navio * alocar_navio() {
+    printf("3. Alocando navio\n");
     Navio * navio = NULL;
     if(!(navio =(Navio*)malloc(sizeof(Navio))))
         return NULL;
@@ -130,21 +133,25 @@ Navio * alocar_navio() {
 }
 
 void liberar_navio(Navio * nav) {
+    printf("4. Liberando navio\n");
     liberar_pilhas(nav);
     free(nav);
 }
 
 void alocar_filas() {
+    printf("5. Alocando filas\n");
     for (int i = 0; i < 4; i++) 
         fila_atracadouro[i] = lista_nova();
 }
 
 void liberar_filas() {
+    printf("6. Liberando filas\n");
     for (int i = 0; i < 4; i++)
         lista_destruir(fila_atracadouro[i]);
 }
 
 void alocar_pilhas(Navio * nav) {
+    printf("7. Alocando pilhas\n");
     for (int i = 0; i < 4; i++)
         nav->pilhas[i] = lista_nova();
     // gerando containers
@@ -154,17 +161,20 @@ void alocar_pilhas(Navio * nav) {
 }
 
 void liberar_pilhas(Navio * nav) {
+    printf("8. Liberando pilhas\n");
     for (int i = 0; i < 4; i++)
         lista_destruir(nav->pilhas[i]);
 }
 
 void alocar_travessas() {
+    printf("9. Alocando travessas\n");
     for (int i = 0; i < 5; i++) {
         pilha_travessa[i] = lista_nova();
     }
 }
 
 void liberar_travessas() {
+    printf("10. Liberando travessas\n");
     for (int i = 0; i < 5; i++) {
         lista_destruir(pilha_travessa[i]);
     }
@@ -179,6 +189,7 @@ void liberar_travessas() {
 */
 
 int qtd_containers(Navio * nav) {
+    printf("11. Qtd containers\n");
     int tam = 0;
     for (int i = 0; i < 4; i++)
         tam += lista_tamanho(nav->pilhas[i]);
@@ -186,6 +197,7 @@ int qtd_containers(Navio * nav) {
 }
 
 void inserir_container(Navio * nav, Container * c) {
+    printf("12. Inserindo container\n");
     for (int i = 0; i < 4; i++) {
         if(lista_tamanho(nav->pilhas[i]) < 4) {
             lista_ipush(nav->pilhas[i], c);
@@ -195,6 +207,7 @@ void inserir_container(Navio * nav, Container * c) {
 }
 
 Container * remover_container(Navio * nav) {
+    printf("13. Removendo container\n");
     if(qtd_containers(nav))
         for (int i = 0; i < 4; i++)
             if(lista_tamanho(nav->pilhas[i])) 
@@ -211,7 +224,7 @@ Container * remover_container(Navio * nav) {
 */
 
 void entrar_fila(int n) {
-    printf("entrando %d navios\n", n);
+    printf("Entrando %d navio(s)\n", n);
     int mod = 0;
     for(int i = 0; i < 4; i++) 
         mod += lista_tamanho(fila_atracadouro[i]); 
@@ -236,6 +249,7 @@ void entrar_fila(int n) {
 }
 
 void incrementar_tempo() {
+    printf("14. Incrementando tempo\n");
     Node * n;
     for (int i = 0; i < 4; i++) {
         if(!(n = lista_inicio(fila_atracadouro[i]))) {
@@ -249,16 +263,20 @@ void incrementar_tempo() {
 }
 
 void movendo_gruas() {
+    printf("15. Movendo gruas\n");
     for (int i = 0; i < 4; i++) {
         Navio * nav = NULL;
+        if(lista_tamanho(fila_atracadouro[i]) == 0)
+            continue;
         nav = lista_destruir_node(lista_ipop(fila_atracadouro[i]));
-        if(nav != NULL) {
+        printf("teste\n");
+        if(nav != NULL) {            
             Container * c = remover_container(nav);
             if(c != NULL) {
                 int key = inserir_travessa(c);
                 if(key == 1) {
                     mov_grua(i, nav->id);
-                    if(qtd_containers(nav) == 0) {
+                    if(qtd_containers(nav) == 0) {                        
                         liberar_navio(nav);
                         continue;
                     }
@@ -271,8 +289,8 @@ void movendo_gruas() {
                     inserir_container(nav, c);
                     lista_ipush(fila_atracadouro[i], nav);
                     continue;
-                }
-            }
+                }            
+            }            
         }
     }         
 }
@@ -286,6 +304,7 @@ void movendo_gruas() {
 */
 
 int inserir_travessa(Container * c) {
+    printf("16. Inserindo na travessa\n");
     for (int i = 0; i < 5; i++) {
         if(lista_tamanho(pilha_travessa[mod_travessa]) < 5) {
             lista_ipush(pilha_travessa[mod_travessa], c);
@@ -300,11 +319,14 @@ int inserir_travessa(Container * c) {
 }
 
 void esvaziar_travessas() {
+    printf("16. Esvaziando travessas\n");
     for (int i = 0; i < 5; i++) {
         if(lista_tamanho(pilha_travessa[i]) >= 5) {
-            printf("Liberando travessa %d\n", i);
-            while(lista_tamanho(pilha_travessa[i]))
+            printf("Liberando travessa %d: tamanho: %d\n", i, lista_tamanho(pilha_travessa[i]));
+            while(lista_tamanho(pilha_travessa[i])) {
+                //ÇAPOHA N FUNFA AINDA
                 liberar_container(lista_destruir_node(lista_ipop(pilha_travessa[i])));            
+            }
         }
     }
 }
@@ -318,6 +340,7 @@ void mov_grua(int grua, int navio) {
 }
 
 void media_tempo() {
+    printf("17. Media de tempo\n");
     float media = 0;
     int qtd = 0;
     Node * n = NULL;
