@@ -49,15 +49,20 @@ void liberar_travessas();
 
 // controle dos navios
 unsigned int qtd_containers(Navio * nav);
+Container * remover_container(Navio * nav);
 
 // controle das filas
 void entrar_fila(int n);
 void incrementar_tempo();
-void movendo_gruas();
-int inserir_travessa();
+void movendo_gruas(int * mod);
     
 // entrada/saida das pilhas
-void criar_containers(Navio * nav, int n);
+int inserir_travessa(Container * c, int * mod);
+void esvaziar_travessas();
+
+// prints
+void mov_grua();
+void media_tempo();
 
 int main(int args, char** argv) {
     // iniciando semente do gerador de numeros
@@ -65,12 +70,15 @@ int main(int args, char** argv) {
     // alocando memória
     alocar_filas();
     alocar_travessas();
-    last_id = 0; 
-    unsigned long int tempo = 0;
+    unsigned long int tempo = 0;    
+    int mod_travessa = 0;
     do {
         // coloca um numero aleatorio (0-3) de navios na fila
         entrar_fila(rand() % 3);
-        movendo_gruas();
+        // ultima travessa inserida
+        movendo_gruas(&mod_travessa);
+        esvaziar_travessas();
+        media_tempo();
         incrementar_tempo();
         tempo++;
     } while(tempo < MAX_TEMPO);
@@ -102,6 +110,7 @@ Navio * alocar_navio() {
         navio->tempo = 0;
         alocar_pilhas(navio);
     }
+    //TODO: criar containers
     return navio;
 }
 
@@ -161,6 +170,15 @@ unsigned int qtd_containers(Navio * nav) {
     return tam;
 }
 
+Container * remover_container(Navio * nav) {
+    if(!(qtd_containers(nav)))
+        return NULL;
+    for (int i = 0; i < 4; i++)
+        if(lista_tamanho(nav->pilhas[i])) 
+            return lista_destruir_node(lista_ipop(nav->pilhas[i]));
+    return NULL;
+}
+
 /*
     [FIM] CONTROLE DOS NAVIOS
 */
@@ -191,22 +209,61 @@ void incrementar_tempo() {
     }         //endfor
 }
 
-void movendo_gruas() {
+void movendo_gruas(int * mod) {
     for (int i = 0; i < 4; i++) {
         Navio * nav = NULL;
-        if(!(nav = lista_destruir_node(
-            lista_ipop(fila_atracadouro[i])))) {
+        if((nav = lista_destruir_node(
+            lista_ipop(fila_atracadouro[i]))) != NULL) {
             // movendo containers para travessas
-            while(qtd_containers(nav)) {
-                int mod = 0;
-                if(lista_tamanho(pilha_travessa[mod++]) < 5) {
-
-                }   //endif
-            }       //endwhile        
-        }           //endif
-    }               //endfor
+            for (int j = 0; j < 4; j++) {
+                Container * c = lista_destruir_node(lista_ipop(nav->pilhas[j]));
+                if(lista_tamanho(nav->pilhas[j])) {                                     
+                    if(inserir_travessa(c, mod)) {
+                        mov_grua(i, nav->id);
+                        // container inserido, sai para fora do for
+                        break;
+                    }  //endif
+                }      //endif
+                // inserção não ocorreu, então o container volta para o navio
+                lista_ipush(c, nav->pilhas[j]);
+            }          //endfor
+            // se ainda houver containers no navio, ele volta para a fila
+            if(qtd_containers(nav))
+                lista_ipush(fila_atracadouro[i], nav);
+        }              //endif
+    }                  //endfor
 }
 
 /*
     [FIM] CONTROLE DAS FILAS
 */
+
+/*
+    [INICIO] CONTROLE DAS PILHAS
+*/
+
+int inserir_travessa(Container * c, int * mod) {
+    int m = *mod;
+    for (int i = 0; i < 5; i++) {
+        if(lista_tamanho(pilha_travessa[m]) < 5) {
+            lista_ipush(pilha_travessa[m], c);
+            * mod = ++m % 5;
+            return 1;
+        }
+        m++;
+        m = m % 5;
+    }
+    return 0;
+}
+
+/*
+    [FIM] CONTROLE DAS PILHAS
+*/
+
+void mov_grua(int grua, int navio) {
+    printf("Grua %d movendo container do navio %d", grua, navio);
+}
+
+void media_tempo() {
+
+}
