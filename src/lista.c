@@ -21,6 +21,10 @@ Node * lista_novo_node(TIPO * valor) {
     return node;
 }
 
+TIPO * lista_valor(Node * n) {
+    return n->valor;
+}
+
 TIPO * lista_destruir_node(Node * node) {
     TIPO * valor = node->valor;
     free(node);
