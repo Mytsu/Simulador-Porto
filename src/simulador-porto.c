@@ -14,7 +14,7 @@
 #include <time.h>
 
 // setando quantidade máxima de unidades de tempo, para testes
-#define MAX_TEMPO 10
+#define MAX_TEMPO 100
 
 typedef struct {
     unsigned long int id;

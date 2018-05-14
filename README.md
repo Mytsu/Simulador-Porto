@@ -2,6 +2,14 @@
 
 Detalhes de projeto e descrição das funções do simulador.
 
+## Definições
+
+    ```C
+        #define MAX_TEMPO 100
+    ```
+
+    Define a quantidade de iterações de tempo realizadas pelo projeto.
+
 ## Estruturas
 
 - Estrutura Container
