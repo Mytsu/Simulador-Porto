@@ -94,6 +94,7 @@ int main(int args, char** argv) {
         media_tempo();
         tempo++;
     }
+    printf("\nQuantidade de containers transportados para as travessas: %d", cont_travessa);
     // desalocando memória
     liberar_filas();
     liberar_travessas();
@@ -263,7 +264,6 @@ void entrar_fila(int n) {
         mod++;
         mod = mod % 4;
     }
-    /*
     for (int i = 0; i < 4; i++) {
         Node * n;
         Navio * nav;
@@ -276,7 +276,6 @@ void entrar_fila(int n) {
         }            
         printf("\n");
     }    
-    */
 }
 
 void incrementar_tempo() {
@@ -410,7 +409,7 @@ void media_tempo() {
     if(qtd == 0) {
         return;
     }        
-    printf("Tempo medio de espera: %.2f / %.2f = %.2f\n", media, (float)qtd, media / (float)qtd);
+    printf("Tempo medio de espera: %.2f\n", media / (float)qtd);
 }
 
 /*
