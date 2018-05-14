@@ -4,9 +4,7 @@ Detalhes de projeto e descrição das funções do simulador.
 
 ## Definições
 
-    ```C
-        #define MAX_TEMPO 100
-    ```
+    MAX_TEMPO
 
     Define a quantidade de iterações de tempo realizadas pelo projeto.
 
