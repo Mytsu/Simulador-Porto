@@ -47,23 +47,23 @@ Detalhes de projeto e descrição das funções do simulador.
         int cont_travessa = 0;
     ```
 
-    - `fila_atracadouro[]`
+    - fila_atracadouro[]
 
     Para controle das filas de navios.
 
-    - `pilha_travessa`
+    - pilha_travessa
 
     Para controle das travessas de containers.
 
-    - `last_id`
+    - last_id
 
     Módulo para alocação dos Navios nas filas, armazena o último id utilizado para alocação.
 
-    - `id_containers`
+    - id_containers
 
     Módulo para alocação dos Containers, armazena o último id utilizado para alocação.
 
-    - `mod_travessa`
+    - mod_travessa
 
     Módulo para controle das travessas para evitar desbalanceamento.
 
