@@ -38,7 +38,9 @@ Detalhes de projeto e descrição das funções do simulador.
     Pilhas de containers para armazenamento.
 
 ## Variáveis Globais
--
+
+-   Variáveis de controle do sistema
+
     ```C
         Lista * fila_atracadouro[4];
         Lista * pilha_travessa[5];
@@ -48,25 +50,25 @@ Detalhes de projeto e descrição das funções do simulador.
         int cont_travessa = 0;
     ```
 
-- fila_atracadouro[]
+    1. fila_atracadouro[]
 
-    Para controle das filas de navios.
+        Para controle das filas de navios.
 
-- pilha_travessa
+    2. pilha_travessa
 
-    Para controle das travessas de containers.
+        Para controle das travessas de containers.
 
-- last_id
+    3. last_id
 
-    Módulo para alocação dos Navios nas filas, armazena o último id utilizado para alocação.
+        Módulo para alocação dos Navios nas filas, armazena o último id utilizado para alocação.
 
-- id_containers
+    4. id_containers
 
-    Módulo para alocação dos Containers, armazena o último id utilizado para alocação.
+        Módulo para alocação dos Containers, armazena o último id utilizado para alocação.
 
-- mod_travessa
+    5. mod_travessa
 
-    Módulo para controle das travessas para evitar desbalanceamento.
+        Módulo para controle das travessas para evitar desbalanceamento.
 
 ## Funções
 
